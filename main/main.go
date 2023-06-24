@@ -41,6 +41,7 @@ func main() {
 		{
 			options.SymbolTableInf(f)
 		}
+
 	//TO DO: Note
 	/*
 		case "-N":
@@ -50,11 +51,15 @@ func main() {
 		{
 			options.RelocsInf(f)
 		}
-		//TO DO: Version info
-		/*
-			case "-v":
-				options.VersionInf(f)
-		*/
 
+	//TO DO: Version info
+	/*
+		case "-v":
+			options.VersionInf(f)
+	*/
+	default:
+		{
+			fmt.Println("Error: no such an option")
+		}
 	}
 }
